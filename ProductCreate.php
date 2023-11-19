@@ -1,5 +1,5 @@
 <?php
-include '../Assets/ConnectDB.php';
+include 'ConnectDB.php';
 if(!isset($_SESSION['Email'])){
     ?>
         <script>

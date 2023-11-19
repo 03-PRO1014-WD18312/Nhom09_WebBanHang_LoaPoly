@@ -1,12 +1,6 @@
 <?php
-if(!isset($_SESSION['Email'])){
-    ?>
-        <script>
-            window.location="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
-        </script>
-    <?php   
-}
-include '../Assets/ConnectDB.php'; 
+
+include 'ConnectDB.php'; 
 $sql = "SELECT * FROM product inner join Category on Product.CategoryID = Category.CategoryID"; 
 $result = $conn->query($sql);
 $conn->close();

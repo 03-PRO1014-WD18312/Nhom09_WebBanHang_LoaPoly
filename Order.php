@@ -6,7 +6,7 @@ if(!isset($_SESSION['Email'])){
         </script>
     <?php   
 }
-include '../Assets/ConnectDB.php'; 
+include 'ConnectDB.php'; 
 
 $sql = "SELECT * FROM orders inner join OrderDetail on Orders.OrderID = OrderDetail.OrderID where StatusOrderDetail = 1  "; 
 $result = $conn->query($sql);

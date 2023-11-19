@@ -3,7 +3,7 @@
   { 
       session_start(); 
   } 
-    include "../Assets/ConnectDB.php";  
+    include "ConnectDB.php";  
 
     $sqlOrderDetail = "SELECT * FROM OrderDetail where StatusOrderDetail = 0"; 
     $dem = 0; 
@@ -45,7 +45,7 @@
             <meta name="author" content="" />
             <title>Dashboard - SB Admin</title>
             <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-            <link href="../Assets/Admin/css/styles.css" rel="stylesheet" />
+            <link href="styles.css" rel="stylesheet" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
         </head>
         <body class="sb-nav-fixed">
