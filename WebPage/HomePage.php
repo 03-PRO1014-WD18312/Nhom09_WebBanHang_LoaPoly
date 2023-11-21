@@ -604,7 +604,7 @@ $conn->close();
                         <li> <span>SAFE PAYMENT</span></li>
                     </ul>
                     <div>
-                        <span>Pay with the world’s most secure payment methods.</span>
+                        <span>Pay with the world's most secure payment methods.</span>
                     </div>
                 </div>
             </div>
