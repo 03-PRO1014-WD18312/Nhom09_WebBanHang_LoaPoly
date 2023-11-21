@@ -1,10 +1,20 @@
 <?php
 
+if(!isset($_SESSION['Email'])){
+    ?>
+        <script>
+            window.location="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
+        </script>
+    <?php   
+}
+
 include '../Assets/ConnectDB.php'; 
 $sql = "SELECT * FROM product inner join Category on Product.CategoryID = Category.CategoryID"; 
 $result = $conn->query($sql);
 $conn->close();
 ?>
+
+
 
 <style>
     *{

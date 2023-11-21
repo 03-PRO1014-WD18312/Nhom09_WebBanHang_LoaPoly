@@ -81,7 +81,7 @@
             <div class="header__Second-wrap">
                 <div class="header__Second">
                     <div class="header__logo">
-                        <!-- <a href="/MyWeb/WebPage/_LayoutWebPage.php?"><img alt="KuteShop" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/logo-4.png" class="_rw"></a> -->
+                        <!-- <a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?"><img alt="KuteShop" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/logo-4.png" class="_rw"></a> -->
                      <h1> LOA FOLY</h1>
                     </div>
                     <div class="header__nav">
@@ -166,7 +166,7 @@
                                 <li>
                                     <span>
                                         Phone:
-                                        (+800) 123 456 7891
+                                        (+800) 223 456 7032
                                     </span>
                                 </li>
                                 <li>

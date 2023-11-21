@@ -272,7 +272,7 @@ $conn->close();
                     <div class="fashion__nav-item fs__nav">
                         <ul>
                             <li><a href="">- Hair Accesories</a></li>
-                            <li><a href="">- Jackets</a></li>
+                            <li><a href="">- Jacket</a></li>
                             <li><a href="">- Jumpsuits</a></li>
                             <li><a href="">- Kid Fashion</a></li>
                             <li><a href="">- Scarves</a></li>
@@ -604,7 +604,7 @@ $conn->close();
                         <li> <span>SAFE PAYMENT</span></li>
                     </ul>
                     <div>
-                        <span>Pay with the world’s most secure payment methods.</span>
+                        <span>Pay with the world's most secure payment methods.</span>
                     </div>
                 </div>
             </div>
