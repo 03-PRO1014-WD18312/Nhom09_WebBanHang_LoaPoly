@@ -3,6 +3,13 @@
   { 
       session_start(); 
   } 
+  if(!isset($_SESSION['Email'])){
+    ?>
+        <script>
+            window.location="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
+        </script>
+    <?php   
+}
     include "../Assets/ConnectDB.php";  
 
     $sqlOrderDetail = "SELECT * FROM OrderDetail where StatusOrderDetail = 0"; 
@@ -20,7 +27,7 @@
             while($row = $result->fetch_assoc()) {
                 if($row['Role'] != 0){
                 $_SESSION['ID'] = $row['UserID'];
-                header('location:/WebPage/_LayoutWebPage.php');
+                header('location:/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php');
                 }else{
                     $_SESSION['ID'] = $row['UserID'];
                 }
