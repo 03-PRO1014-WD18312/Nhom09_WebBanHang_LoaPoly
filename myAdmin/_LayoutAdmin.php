@@ -10,6 +10,7 @@
         </script>
     <?php   
 }
+
     include "../Assets/ConnectDB.php";  
 
     $sqlOrderDetail = "SELECT * FROM OrderDetail where StatusOrderDetail = 0"; 
