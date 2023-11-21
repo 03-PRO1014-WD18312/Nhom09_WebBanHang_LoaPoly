@@ -42,7 +42,7 @@
                 </div>
                 <div class="header__first_item">
                     <ul class="header__list-2">
-                        <li id="myTitleAccount"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Login"><?php
+                        <li id="myTitleAccount"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login"><?php
                          if(isset($_SESSION['Email'])){
                             echo ($_SESSION['Email']);
                         }else{
@@ -51,7 +51,7 @@
                         ?></a>
                             <?php if(isset($_SESSION['Email'])){
                                 ?>
-                                     <span style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;line-height:30px" id="myLogout"><a href="/MyWeb/WebPage/ProcessLogout.php?id=0">Logout</a></span>
+                                     <span style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;line-height:30px" id="myLogout"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessLogout.php?id=0">Logout</a></span>
                                 <?php
                             } ?>
                            
@@ -61,10 +61,10 @@
                         <div class="header__vertical-2"></div>
                         <li><a href="">Support</a></li>
                         <div class="header__vertical-2"></div>
-                        <li id="cart-option" style="position:relative" ><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"><i class="fas fa-shopping-cart"></i></a>
+                        <li id="cart-option" style="position:relative" ><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"><i class="fas fa-shopping-cart"></i></a>
                         <ul id="view-cart-option" style="position:absolute" style="width:100px;height:300px">
-                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart">Giỏ Hàng </a></li>
-                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;margin-top:3px"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Order">View Order</a></li>
+                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart">Giỏ Hàng </a></li>
+                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;margin-top:3px"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Order">View Order</a></li>
                     </ul>
                         </li>
                         <span class="header__cart-quantity">
@@ -86,7 +86,7 @@
                     </div>
                     <div class="header__nav">
                         <ul>
-                            <li><span><a href="http://localhost/MyWeb/WebPage/_LayoutWebPage.php" style="color:white">HOME</a></span></li>
+                            <li><span><a href="http://localhost/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php" style="color:white">HOME</a></span></li>
                             <li>SHOP</li>
                             <li>BLOG</li>
                             <li>PAGE</li>
@@ -227,7 +227,45 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="footer__hotkeywords">
+                    <ul>
+                        <li>
+                            <span class="Title__keyhot">Hot Searched Keywords:</span>
+                            <span>Xiaomi Mi3</span>
+                            <span>Digiflip Pro XT 712 Tablet</span><span>Mi 3 Phones</span><span>Iphone 6 Plus</span>
+                            <span> Women’s Messenger Bags</span><span> Wallets</span>
+                            <span> Women’s Clutches</span><span>  Backpacks Totes</span>
+                        </li>
+                        <li>
+                            <span class="Title__keyhot">Television:</span>
+                            <span>Sony TV</span>
+                            <span>Samsung TV</span><span>
+                                LG TV
+                            </span>Panasonic TV<span>
+                                Onida TV
+                            </span>
+                            <span>
+                                Toshiba TV
+                            </span>
+                            Philips TV<span>
+                                Micromax TV
+                            </span>
+                            <span> LED TV</span><span>Smart TV</span>
+                            <span>Palsma TV</span>
+                            <span>LCD TV</span>
+                        </li>
+                        <li>
+                            <span class="Title__keyhot">Footwear:</span>
+                            <span>Shoes</span>
+                            <span>Casual Shoes</span><span>Sport Shoes</span><span>Formal Shoes</span>
+                            <span>Adidas Shoes</span><span>Gas Shoes</span>
+                            <span>Puma Shoes</span><span>Reebok Shoes</span>
+                            <span>Woodland Shoes</span>
+                            <span>Red tape Shoes</span>
+                            <span>Nike Shoes</span>
+                        </li>
+                    </ul>
+                </div>
                 <div class="footer__CoppyRight">
                     <ul>
                         <li><span>Copyrights © KuteShop eCommerce. All Rights Reserved.</span></li>

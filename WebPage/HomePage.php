@@ -49,11 +49,11 @@ $conn->close();
                     </div>
                     <div class="quickHr"></div>
                     <div class="quickDescription itemQuick">
-                        <span class="Main__quickDescription">JBL PartyBox is a quality product from the JBL brand with powerful sound quality and unique lighting effects. JBL PartyBox promises to bring users a great sound experience.</span>
+                        <span class="Main__quickDescription">With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visual7al data.</span>
                     </div>
                     <div class="quickHr"></div>
                     <div class="quickOption itemQuick">
-                        <span>Status  : <span class="quickStock"> In stock </span></span>
+                        <span>Tình Trạng  : <span class="quickStock">Còn Hàng </span></span>
                         <div class="quickAddCart">
                             <div>
                             <span class="quickDec"><i class="fas fa-minus"></i></span>
@@ -62,7 +62,7 @@ $conn->close();
                             </div>
 
                             <div class="addK">
-                                <span>ADD TO CART </span>
+                                <span>Thêm vào giỏ hàng </span>
                             </div>
                             <!-- <div class="addK">
                                 <span>Mua Ngay  </span>
@@ -104,13 +104,27 @@ $conn->close();
              
                 <li class="body__category-link">
                     <div><a href="https://kuteshop.kutethemes.net/product-category/market/electronic/headphone-headset/?demo=955" data-megamenu="463"><span class="icon icon-img"><img width="23" height="26" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/02-menu-7.png" class="icon-image wp-post-image" alt="" loading="lazy"></div>
-                    <div><a href="">TAI NGhE </a></div>
+                    <div><a href="">TAI NGHE </a></div>
                 </li>
                 <li class="body__category-link">
                     <div><a href="https://kuteshop.kutethemes.net/product-category/market/digital/laptops-plus/?demo=955" data-megamenu="463"><span class="icon icon-img"><img width="23" height="26" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/02-menu-6.png" class="icon-image wp-post-image" alt="" loading="lazy"></div>
                     <div><a href="">HÀNG CŨ</a></div>
                 </li>
-              
+                <!-- <li class="body__category-link">
+                    <div><a href="https://kuteshop.kutethemes.net/product-category/market/jewelry/?demo=955" data-megamenu="463"><span class="icon icon-img"><img width="23" height="26" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/02-menu-8.png" class="icon-image wp-post-image" alt="" loading="lazy"></div>
+                    <div><a href="">Jewelry & Watches</a></div>
+                </li>
+                <li class="body__category-link">
+                    <div><a href="https://kuteshop.kutethemes.net/product-category/market/electronic/lights-lamps/?demo=955" data-megamenu="463"><span class="icon icon-img"><img width="23" height="26" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/02-menu-9.png" class="icon-image wp-post-image" alt="" loading="lazy"></div>
+                    <div><a href="">Lights & Lamps</a></div>
+                </li>
+                <li class="body__category-link near_end">
+                    <div><a href="https://kuteshop.kutethemes.net/product-category/market/digital/cameras-photo/?demo=955" data-megamenu="463"><span class="icon icon-img"><img width="23" height="26" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/02-menu-10.png" class="icon-image wp-post-image" alt="" loading="lazy"></span></a></div>
+                    <div><a href="">Cameras & Photo</a></div>
+                </li> -->
+                <li class="body__category-link ">
+                    <div><a href="">+ All categories</a></div>
+                </li>
             </ul>
         </div>
         <div class="body__slice-wrap">
@@ -200,7 +214,7 @@ $conn->close();
                 while($row = $resultDiscount->fetch_assoc()) {
                 ?>
                     <div  id="myProduct__Discount" class="Product__discount-item discount_@item.ProductID ">
-                   <a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>"><img width="100%" height="202" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-168x202 size-168x202 wp-post-image" alt="" loading="lazy"></a>
+                   <a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>"><img width="100%" height="202" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-168x202 size-168x202 wp-post-image" alt="" loading="lazy"></a>
                     <div class="Product__discount-name">
                         <span class="discount_ProductName"><?php echo $row['ProductName']?></span>
                     </div>
@@ -221,7 +235,7 @@ $conn->close();
                         <ul class="Product__discount-options">
                             <li><i class="far fa-heart"></i></li>
                             <li onclick="crawData(<?php echo $row['ProductID']?>)" ><i class="fas fa-search-plus"></i></li>
-                            <li><a href="/MyWeb/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
                         </ul>
                     </div>
                     <div class="dcDescription">
@@ -304,7 +318,7 @@ $conn->close();
                 while($row = $resultFashion->fetch_assoc()) {                 
                 ?>
                      <div class="fashion__main-item discount_@item.ProductID" >
-                     <a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>"> <img width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
+                     <a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>"> <img width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
                         <div class="Product__discount-name fashion__Product-name">
                             <span class="discount_ProductName"><?php echo $row['ProductName']?></span>
                         </div>
@@ -325,7 +339,7 @@ $conn->close();
                             <ul class="Product__discount-options">
                                 <li><i class="far fa-heart"></i></li>
                                 <li onclick="crawData(@item.ProductID)"><i class="fas fa-search-plus"></i></li>
-                                <li><a href="/MyWeb/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="dcDescription">
@@ -371,7 +385,7 @@ $conn->close();
                 while($row = $resultSport->fetch_assoc()) {
                 ?>
                         <div class="sport__main-item discount_@item.ProductID">
-                        <a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>">  <img  width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
+                        <a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>">  <img  width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
                             <div class="Product__discount-name fashion__Product-name">
                                 <span class="discount_ProductName"><?php echo $row['ProductName']?></span>
                             </div>
@@ -392,7 +406,7 @@ $conn->close();
                                 <ul class="Product__discount-options">
                                     <li><i class="far fa-heart"></i></li>
                                     <li onclick="crawData(<?php echo $row['ProductID']?>)"><i class="fas fa-search-plus"></i></li>
-                                    <li><a href="/MyWeb/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
+                                    <li><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
                             <div class="dcDescription">
@@ -525,7 +539,7 @@ $conn->close();
                 while($row = $resultElectric->fetch_assoc()) {
                 ?>
                      <div class="electro__main-item discount_@item.ProductID">
-                     <a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>">   <img  width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
+                     <a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>">   <img  width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
                                 <div class="Product__discount-name fashion__Product-name">
                                     <span class="discount_ProductName"><?php echo $row['ProductName']?></span>
                                 </div>
@@ -546,7 +560,7 @@ $conn->close();
                                     <ul class="Product__discount-options">
                                         <li><i class="far fa-heart"></i></li>
                                         <li onclick="crawData(<?php echo $row['ProductID']?>)"><i class="fas fa-search-plus"></i></li>
-                                        <li><a href="/MyWeb/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="dcDescription">
