@@ -81,7 +81,6 @@
             <div class="header__Second-wrap">
                 <div class="header__Second">
                     <div class="header__logo">
-                        <!-- <a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?"><img alt="KuteShop" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/logo-4.png" class="_rw"></a> -->
                      <h1> LOA FOLY</h1>
                     </div>
                     <div class="header__nav">
@@ -229,31 +228,8 @@
                 </div>
                 <div class="footer__hotkeywords">
                     <ul>
-                        <li>
-                            <span class="Title__keyhot">Hot Searched Keywords:</span>
-                            <span>Xiaomi Mi3</span>
-                            <span>Digiflip Pro XT 712 Tablet</span><span>Mi 3 Phones</span><span>Iphone 6 Plus</span>
-                            <span> Women’s Messenger Bags</span><span> Wallets</span>
-                            <span> Women’s Clutches</span><span>  Backpacks Totes</span>
-                        </li>
-                        <li>
-                            <span class="Title__keyhot">Television:</span>
-                            <span>Sony TV</span>
-                            <span>Samsung TV</span><span>
-                                LG TV
-                            </span>Panasonic TV<span>
-                                Onida TV
-                            </span>
-                            <span>
-                                Toshiba TV
-                            </span>
-                            Philips TV<span>
-                                Micromax TV
-                            </span>
-                            <span> LED TV</span><span>Smart TV</span>
-                            <span>Palsma TV</span>
-                            <span>LCD TV</span>
-                        </li>
+                      
+                      
                         <li>
                             <span class="Title__keyhot">Footwear:</span>
                             <span>Shoes</span>
@@ -268,8 +244,8 @@
                 </div>
                 <div class="footer__CoppyRight">
                     <ul>
-                        <li><span>Copyrights © KuteShop eCommerce. All Rights Reserved.</span></li>
-                        <li><span>Made with <i class="fas fa-heart"></i>  by Kutetheme!</span></li>
+                        <li><span>Copyrights © LoaPoly eCommerce. All Rights Reserved.</span></li>
+                        <li><span>Made with <i class="fas fa-heart"></i>  by LoaPoly!</span></li>
                     </ul>
                 </div>
             </div>
