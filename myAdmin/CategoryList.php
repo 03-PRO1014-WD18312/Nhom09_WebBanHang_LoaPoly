@@ -1,9 +1,17 @@
 <?php
+if(!isset($_SESSION['Email'])){
+    ?>
+        <script>
+            window.location="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
+        </script>
+    <?php   
+}
 include '../Assets/ConnectDB.php'; 
 $sql = "SELECT * FROM category"; 
 $result = $conn->query($sql);
 $conn->close();
 ?>
+
 
 
 <style>
