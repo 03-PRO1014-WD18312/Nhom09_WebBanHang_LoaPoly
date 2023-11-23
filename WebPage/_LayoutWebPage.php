@@ -81,7 +81,7 @@
             <div class="header__Second-wrap">
                 <div class="header__Second">
                     <div class="header__logo">
-                        <!-- <a href="/Nhom09_WedBanHang_LoaPoly/WebPage/_LayoutWebPage.php?"><img alt="KuteShop" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/logo-4.png" class="_rw"></a> -->
+                        
                      <h1> LOA FOLY</h1>
                     </div>
                     <div class="header__nav">
