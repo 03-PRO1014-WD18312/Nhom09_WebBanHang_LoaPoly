@@ -64,8 +64,8 @@ while($row = $result->fetch_assoc()) {
                                  <li class="info">Tel: <?php echo $rowCustomer['Phone'] ?></li>
                                  <li class="info">Address: <?php echo $rowCustomer['CustomerAddress'] ?></li>
                              </ul>
-                             <a id="confirm-btn" href="/MyWeb/MyAdmin/ProcessConfirmOrder.php?id=<?php echo $rowOrder['OrderDetailID'] ?>" style="font-size:18px;font-weight:bold;width:120px;height:40px;background-color:#A9A9A9;text-align:center;line-height:40px;color:white;border-radius:5px;margin-top:60px;text-decoration:none;margin-left:450px; position:relative">CONFIRM</a>
-                             <a id="confirm-btn" href="/MyWeb/MyAdmin/DeleteOrder.php?id=<?php echo $rowOrder['OrderDetailID'] ?>" style="font-size:18px;font-weight:bold;width:120px;height:40px;background-color:#A9A9A9;text-align:center;line-height:40px;color:white;border-radius:5px;margin-top:60px;text-decoration:none;margin-left:60px;position:relative">DELETE</a>
+                             <a id="confirm-btn" href="/Nhom09_WebBanHang_LoaPoly/MyAdmin/ProcessConfirmOrder.php?id=<?php echo $rowOrder['OrderDetailID'] ?>" style="font-size:18px;font-weight:bold;width:120px;height:40px;background-color:#A9A9A9;text-align:center;line-height:40px;color:white;border-radius:5px;margin-top:60px;text-decoration:none;margin-left:450px; position:relative">CONFIRM</a>
+                             <a id="confirm-btn" href="/Nhom09_WebBanHang_LoaPoly/MyAdmin/DeleteOrder.php?id=<?php echo $rowOrder['OrderDetailID'] ?>" style="font-size:18px;font-weight:bold;width:120px;height:40px;background-color:#A9A9A9;text-align:center;line-height:40px;color:white;border-radius:5px;margin-top:60px;text-decoration:none;margin-left:60px;position:relative">DELETE</a>
                             </div>
                     </div>
                     <hr>
