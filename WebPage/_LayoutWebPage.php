@@ -42,7 +42,7 @@
                 </div>
                 <div class="header__first_item">
                     <ul class="header__list-2">
-                        <li id="myTitleAccount"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login"><?php
+                        <li id="myTitleAccount"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Login"><?php
                          if(isset($_SESSION['Email'])){
                             echo ($_SESSION['Email']);
                         }else{
@@ -51,7 +51,7 @@
                         ?></a>
                             <?php if(isset($_SESSION['Email'])){
                                 ?>
-                                     <span style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;line-height:30px" id="myLogout"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessLogout.php?id=0">Logout</a></span>
+                                     <span style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;line-height:30px" id="myLogout"><a href="/MyWeb/WebPage/ProcessLogout.php?id=0">Logout</a></span>
                                 <?php
                             } ?>
                            
@@ -61,10 +61,10 @@
                         <div class="header__vertical-2"></div>
                         <li><a href="">Support</a></li>
                         <div class="header__vertical-2"></div>
-                        <li id="cart-option" style="position:relative" ><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"><i class="fas fa-shopping-cart"></i></a>
+                        <li id="cart-option" style="position:relative" ><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"><i class="fas fa-shopping-cart"></i></a>
                         <ul id="view-cart-option" style="position:absolute" style="width:100px;height:300px">
-                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart">Giỏ Hàng </a></li>
-                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;margin-top:3px"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Order">View Order</a></li>
+                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart">Giỏ Hàng </a></li>
+                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;margin-top:3px"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Order">View Order</a></li>
                     </ul>
                         </li>
                         <span class="header__cart-quantity">
@@ -81,11 +81,12 @@
             <div class="header__Second-wrap">
                 <div class="header__Second">
                     <div class="header__logo">
-                     <h1> LOA FOLY</h1>
+                        <!-- <a href="/MyWeb/WebPage/_LayoutWebPage.php?"><img alt="KuteShop" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/logo-4.png" class="_rw"></a> -->
+                     <h1 style="color:white"> LOA FOLY</h1>
                     </div>
                     <div class="header__nav">
                         <ul>
-                            <li><span><a href="http://localhost/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php" style="color:white">HOME</a></span></li>
+                            <li><span><a href="http://localhost/MyWeb/WebPage/_LayoutWebPage.php" style="color:white">HOME</a></span></li>
                             <li>SHOP</li>
                             <li>BLOG</li>
                             <li>PAGE</li>
@@ -141,6 +142,7 @@
                                 case 'lgPayment':include_once './loginPayment.php';
                                 break; 
                                 case 'OrderSS':include_once './OrderSuccess.php'; 
+                                case 'ProductByCategory':include_once './ProductByCategory.php'; 
                                 break; 
                             }
                         }else{
@@ -165,7 +167,7 @@
                                 <li>
                                     <span>
                                         Phone:
-                                        (+800) 223 456 7032
+                                        (+800) 123 456 7891
                                     </span>
                                 </li>
                                 <li>
@@ -226,26 +228,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__hotkeywords">
-                    <ul>
-                      
-                      
-                        <li>
-                            <span class="Title__keyhot">Footwear:</span>
-                            <span>Shoes</span>
-                            <span>Casual Shoes</span><span>Sport Shoes</span><span>Formal Shoes</span>
-                            <span>Adidas Shoes</span><span>Gas Shoes</span>
-                            <span>Puma Shoes</span><span>Reebok Shoes</span>
-                            <span>Woodland Shoes</span>
-                            <span>Red tape Shoes</span>
-                            <span>Nike Shoes</span>
-                        </li>
-                    </ul>
-                </div>
+                
                 <div class="footer__CoppyRight">
                     <ul>
-                        <li><span>Copyrights © LoaPoly eCommerce. All Rights Reserved.</span></li>
-                        <li><span>Made with <i class="fas fa-heart"></i>  by LoaPoly!</span></li>
+                        <li><span>Copyrights © KuteShop eCommerce. All Rights Reserved.</span></li>
+                        <li><span>Made with <i class="fas fa-heart"></i>  by Kutetheme!</span></li>
                     </ul>
                 </div>
             </div>
