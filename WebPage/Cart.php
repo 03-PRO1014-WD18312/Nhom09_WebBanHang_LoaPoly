@@ -59,7 +59,7 @@ include '../Assets/ConnectDB.php';
                                        <td>$<?php echo $totalPrice ?>.00</td>
                                        <td> <a onclick = "document.getElementById('Cart').submit()"  href="#" style="color:#333"?><i style="color:green" class="fa-solid fa-pen-to-square"></i></a>  
                                         <!-- //xoa san pham -->
-                        <a style="color:#333" href ="/Nhom09_WedBanHang_LoaPoly/WebPage/DeleteCart.php?id=<?php echo $row['ProductID'] ?>"><i style="color:red" class="fa-solid fa-trash"></i></a></td>
+                                        <a style="color:#333" href ="/Nhom09_WedBanHang_LoaPoly/WebPage/DeleteCart.php?id=<?php echo $row['ProductID'] ?>"><i style="color:red" class="fa-solid fa-trash"></i></a></td>
                                    </tr>
                                <?php
                                $totalPriceProduct += $totalPrice;

@@ -36,7 +36,7 @@
                 while($row = $result->fetch_assoc()) {
                 ?>
                      <div class="electro__main-item discount_@item.ProductID">
-                     <a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>">   <img  width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
+                     <a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>">   <img  width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
                                 <div class="Product__discount-name fashion__Product-name">
                                     <span class="discount_ProductName"><?php echo $row['ProductName']?></span>
                                 </div>
@@ -57,7 +57,7 @@
                                     <ul class="Product__discount-options">
                                         <li><i class="far fa-heart"></i></li>
                                         <li onclick="crawData(<?php echo $row['ProductID']?>)"><i class="fas fa-search-plus"></i></li>
-                                        <li><a href="/MyWeb/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="dcDescription">
