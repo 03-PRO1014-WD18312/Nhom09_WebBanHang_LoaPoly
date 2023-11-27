@@ -99,7 +99,8 @@
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProductList">Product</a>
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=listCate">Category</a>
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=Order">Order</a>
-                                        <a id="ProcessOrder" class="nav-link" href="Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProcessOrder">Customer Order(<span style="color:red;font-weight:bold" id="quantityOR"><?php echo $dem ?></span>)</a>
+                                        <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=User">User</a>
+                                        <a id="ProcessOrder" class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProcessOrder">Customer Order(<span style="color:red;font-weight:bold" id="quantityOR"><?php echo $dem ?></span>)</a>
                                       
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=myComment">Comment</a>
                                         
@@ -174,6 +175,12 @@
                                 case 'myComment':include_once './CommentList.php'; 
                                 break;
                                 case 'Order':include_once './Order.php'; 
+                                break;
+                                case 'User':include_once './User.php';
+                                break;
+                                case 'AdminRole':include_once './AdminRole.php'; 
+                                break;
+                                case 'UserRole':include_once './UserRole.php'; 
                                 break;
                             }
                         }else{
