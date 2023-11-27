@@ -33,7 +33,7 @@
                             <ul class="Product__discount-options">
                                 <li><i class="far fa-heart"></i></li>
                                 <li onclick="crawData(@item.ProductID)"><i class="fas fa-search-plus"></i></li>
-                                <li><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>"> <i class="fas fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="dcDescription">
