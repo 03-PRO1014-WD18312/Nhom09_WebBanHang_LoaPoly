@@ -42,7 +42,7 @@
                 </div>
                 <div class="header__first_item">
                     <ul class="header__list-2">
-                        <li id="myTitleAccount"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Login"><?php
+                        <li id="myTitleAccount"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login"><?php
                          if(isset($_SESSION['Email'])){
                             echo ($_SESSION['Email']);
                         }else{
@@ -81,12 +81,12 @@
             <div class="header__Second-wrap">
                 <div class="header__Second">
                     <div class="header__logo">
-                        <!-- <a href="/MyWeb/WebPage/_LayoutWebPage.php?"><img alt="KuteShop" src="https://kuteshop.kutethemes.net/wp-content/uploads/2021/08/logo-4.png" class="_rw"></a> -->
+                        
                      <h1 style="color:white"> LOA FOLY</h1>
                     </div>
                     <div class="header__nav">
                         <ul>
-                            <li><span><a href="http://localhost/MyWeb/WebPage/_LayoutWebPage.php" style="color:white">HOME</a></span></li>
+                            <li><span><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php" style="color:white">HOME</a></span></li>
                             <li>SHOP</li>
                             <li>BLOG</li>
                             <li>PAGE</li>
