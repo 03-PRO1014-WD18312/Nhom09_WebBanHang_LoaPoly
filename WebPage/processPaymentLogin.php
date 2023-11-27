@@ -19,7 +19,7 @@ if(!isset($_SESSION))
                  <script>
                     window.location= "/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Payment"
                  </script>
-         <!-- header('/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Payment'); -->
+         <!-- header('/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Payment'); -->
                <?php
             }
         }  

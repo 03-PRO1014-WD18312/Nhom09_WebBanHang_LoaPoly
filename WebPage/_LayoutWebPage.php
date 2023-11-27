@@ -51,7 +51,7 @@
                         ?></a>
                             <?php if(isset($_SESSION['Email'])){
                                 ?>
-                                     <span style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;line-height:30px" id="myLogout"><a href="/MyWeb/WebPage/ProcessLogout.php?id=0">Logout</a></span>
+                                     <span style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;line-height:30px" id="myLogout"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessLogout.php?id=0">Logout</a></span>
                                 <?php
                             } ?>
                            
@@ -61,10 +61,10 @@
                         <div class="header__vertical-2"></div>
                         <li><a href="">Support</a></li>
                         <div class="header__vertical-2"></div>
-                        <li id="cart-option" style="position:relative" ><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"><i class="fas fa-shopping-cart"></i></a>
+                        <li id="cart-option" style="position:relative" ><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"><i class="fas fa-shopping-cart"></i></a>
                         <ul id="view-cart-option" style="position:absolute" style="width:100px;height:300px">
-                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart">Giỏ Hàng </a></li>
-                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;margin-top:3px"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Order">View Order</a></li>
+                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart">Giỏ Hàng </a></li>
+                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;margin-top:3px"><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Order">View Order</a></li>
                     </ul>
                         </li>
                         <span class="header__cart-quantity">
