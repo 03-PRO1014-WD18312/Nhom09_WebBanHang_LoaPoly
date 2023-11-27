@@ -196,7 +196,7 @@ if(isset($_SESSION['ID'])){
  }else{
     ?>
         <script>
-            window.location = "/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=lgPayment";
+            window.location = "/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=lgPayment";
         </script>
     <?php
  }
