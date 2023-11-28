@@ -130,18 +130,18 @@
 </style>
 <div class="details-view-more">
     <ul>
-        <li class="item-view-1">Description</li>
-        <li class="item-view-2">Reviews</li>
-        <li class="item-view-3">Brand</li>
+        <li class="item-view-1">Miêu Tả</li>
+        <li class="item-view-2">Đánh Giá</li>
+        <li class="item-view-3">Thương hiệu</li>
     </ul>
 </div>
 <div class="main-view-more">
     <ul class="main-view-description">
         <li class="Description-item">
-        JBL Bluetooth speaker has an impressive design thanks to the combination of beautiful LED lights and flashing lights. Along with that is strong sound quality with a capacity of 800W for deeper bass and many other outstanding features of karaoke speakers that you can visit CellphoneS to learn more about!
-        </li>
-        <li class="Description-item">JBL PartyBox  Bluetooth speaker not only possesses The lighting style synchronizes with the music rhythm, making everything stand out but also making all the fun explode with a speaker capacity of 800W..</li>
-        <li class="Description-item">To be able to accompany you in all parties from indoors to outdoors, JBL PartyBox  has used high-quality plastic material to have good impact resistance to complete the speaker cover, combined with that. is IPX4 water resistance..</li>
+        Loa Bluetooth JBL có thiết kế ấn tượng nhờ sự kết hợp giữa đèn LED đẹp mắt và đèn nhấp nháy. Cùng với đó là chất lượng âm thanh mạnh mẽ với công suất 800W cho âm trầm sâu hơn và rất nhiều tính năng nổi bật khác của loa karaoke mà bạn có thể ghé thăm CellphoneS để tìm hiểu thêm nhé!
+       </li>
+        <li class="Description-item">Loa Bluetooth JBL PartyBox không chỉ sở hữu phong cách ánh sáng đồng bộ với nhịp điệu âm nhạc khiến mọi thứ trở nên nổi bật mà còn khiến mọi niềm vui bùng nổ với công suất loa 800W.</li>
+        <li class="Description-item">Để có thể đồng hành cùng bạn trong mọi bữa tiệc từ trong nhà đến ngoài trời, JBL PartyBox đã sử dụng chất liệu nhựa cao cấp có khả năng chống va đập tốt để hoàn thiện phần vỏ loa, kết hợp với đó. có khả năng chống nước IPX4..</li>
     </ul>
     <div class="main-view-review">
         <div class="review-header">
