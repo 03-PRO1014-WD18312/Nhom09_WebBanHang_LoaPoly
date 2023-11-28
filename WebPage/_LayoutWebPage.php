@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Assets/WebPage/Css/style.css">
+    <link rel="stylesheet" href="../Assets/WebPage/Css/css.css">
     <link rel="stylesheet" href="../Assets/WebPage/IconWeb/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -81,11 +81,12 @@
             <div class="header__Second-wrap">
                 <div class="header__Second">
                     <div class="header__logo">
-                     <h1> LOA FOLY</h1>
+                        
+                     <h1 style="color:white"> LOA FOLY</h1>
                     </div>
                     <div class="header__nav">
                         <ul>
-                            <li><span><a href="http://localhost/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php" style="color:white">HOME</a></span></li>
+                            <li><span><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php" style="color:white">HOME</a></span></li>
                             <li>SHOP</li>
                             <li>BLOG</li>
                             <li>PAGE</li>
@@ -141,6 +142,7 @@
                                 case 'lgPayment':include_once './loginPayment.php';
                                 break; 
                                 case 'OrderSS':include_once './OrderSuccess.php'; 
+                                case 'ProductByCategory':include_once './ProductByCategory.php'; 
                                 break; 
                             }
                         }else{
@@ -165,7 +167,7 @@
                                 <li>
                                     <span>
                                         Phone:
-                                        (+800) 223 456 7032
+                                        (+800) 123 456 7891
                                     </span>
                                 </li>
                                 <li>
@@ -226,26 +228,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__hotkeywords">
-                    <ul>
-                      
-                      
-                        <li>
-                            <span class="Title__keyhot">Footwear:</span>
-                            <span>Shoes</span>
-                            <span>Casual Shoes</span><span>Sport Shoes</span><span>Formal Shoes</span>
-                            <span>Adidas Shoes</span><span>Gas Shoes</span>
-                            <span>Puma Shoes</span><span>Reebok Shoes</span>
-                            <span>Woodland Shoes</span>
-                            <span>Red tape Shoes</span>
-                            <span>Nike Shoes</span>
-                        </li>
-                    </ul>
-                </div>
+                
                 <div class="footer__CoppyRight">
                     <ul>
-                        <li><span>Copyrights © LoaPoly eCommerce. All Rights Reserved.</span></li>
-                        <li><span>Made with <i class="fas fa-heart"></i>  by LoaPoly!</span></li>
+                        <li><span>Copyrights © KuteShop eCommerce. All Rights Reserved.</span></li>
+                        <li><span>Made with <i class="fas fa-heart"></i>  by Kutetheme!</span></li>
                     </ul>
                 </div>
             </div>

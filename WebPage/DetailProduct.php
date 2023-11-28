@@ -71,7 +71,7 @@
             <span class="info-add-cart">
               
                 <div id="myID-view"><?php echo $row['ProductID'] ?></div>
-                <div class="info-add"><a style="color:white" href="/Nhom09_WebBanHang_LoaPolyWebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>">ADD TO CART</a></div>
+                <div class="info-add"><a style="color:white" href="/Nhom09_WebBanHang_LoaPoly/WebPage/ProcessCart.php?id=<?php echo $row['ProductID']?>">ADD TO CART</a></div>
                 <div class="icon-info">
                     <i class="far fa-heart"></i>
                     <i class="fas fa-retweet"></i>

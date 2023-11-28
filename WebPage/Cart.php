@@ -59,7 +59,7 @@ include '../Assets/ConnectDB.php';
                                        <td>$<?php echo $totalPrice ?>.00</td>
                                        <td> <a onclick = "document.getElementById('Cart').submit()"  href="#" style="color:#333"?><i style="color:green" class="fa-solid fa-pen-to-square"></i></a>  
                                         <!-- //xoa san pham -->
-                        <a style="color:#333" href ="/Nhom09_WedBanHang_LoaPoly/WebPage/DeleteCart.php?id=<?php echo $row['ProductID'] ?>"><i style="color:red" class="fa-solid fa-trash"></i></a></td>
+                        <a style="color:#333" href ="/Nhom09_WebBanHang_LoaPoly/WebPage/DeleteCart.php?id=<?php echo $row['ProductID'] ?>"><i style="color:red" class="fa-solid fa-trash"></i></a></td>
                                    </tr>
                                <?php
                                $totalPriceProduct += $totalPrice;
@@ -96,11 +96,11 @@ include '../Assets/ConnectDB.php';
         justify-content: space-between">
     <div class="cartOptions">
         <i class="fas fa-angle-double-left"></i>
-        <div class="gotoshop"><span><a href="/Nhom09_WedBanHang_LoaPoly/WebPage/_LayoutWebPage.php">GO TO SHOP</a></span></div>
+        <div class="gotoshop"><span><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php">GO TO SHOP</a></span></div>
     </div>
     
     <div style="margin-left:700px" class="cartOptions">
-        <div class="gotoshop"><span><a href="/Nhom09_WedBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Payment">CHECK OUT</a></span></div>
+        <div class="gotoshop"><span><a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Payment">CHECK OUT</a></span></div>
     </div>
 
 </div>
