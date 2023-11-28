@@ -142,6 +142,7 @@
                                 case 'lgPayment':include_once './loginPayment.php';
                                 break; 
                                 case 'OrderSS':include_once './OrderSuccess.php'; 
+                                break; 
                                 case 'ProductByCategory':include_once './ProductByCategory.php'; 
                                 break; 
                             }
