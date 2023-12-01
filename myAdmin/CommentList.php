@@ -48,10 +48,7 @@ include '../Assets/ConnectDB.php';
             <th>Options</th>
         </tr>
         <?php
-        // if( isset($_POST['submit'])){
-            // $id = $_POST['ProductID']; 
-            // $sql = "SELECT * FROM comment Where ProductID = '$id'"; 
-            // $result = $conn->query($sql); 
+      
         
     if ($result->num_rows > 0) 
             {
