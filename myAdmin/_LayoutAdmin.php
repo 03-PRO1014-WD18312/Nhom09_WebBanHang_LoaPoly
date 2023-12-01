@@ -99,13 +99,8 @@
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProductList">Product</a>
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=listCate">Category</a>
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=Order">Order</a>
-<<<<<<< HEAD
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=User">User</a>
                                         <a id="ProcessOrder" class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProcessOrder">Customer Order(<span style="color:red;font-weight:bold" id="quantityOR"><?php echo $dem ?></span>)</a>
-=======
-                                        <a id="ProcessOrder" class="nav-link" href="
-                                        /Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProcessOrder">Customer Order(<span style="color:red;font-weight:bold" id="quantityOR"><?php echo $dem ?></span>)</a>
->>>>>>> Thietnvph38815
                                       
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=myComment">Comment</a>
                                         

@@ -12,11 +12,7 @@ if(!isset($_SESSION['Email'])){
 }
 include '../Assets/ConnectDB.php'; 
 $id = $_GET['id']; 
-<<<<<<< HEAD
-$sql = "DELETE FROM comment WHERE ID = '$id'"; 
-=======
 $sql = "DELETE FROM comments WHERE CommentId = '$id'"; 
->>>>>>> Thietnvph38815
 $conn->query($sql); 
 ?>
     <script>
