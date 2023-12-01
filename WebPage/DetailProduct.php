@@ -5,23 +5,27 @@
     $sql = "SELECT * FROM product Where ProductID = '$id'"; 
     $result = $conn->query($sql); 
 
-    if(isset($_POST['submit'])){
-        $name = $_POST['name'];
+
+   if(isset($_SESSION)) 
+   { 
+    if(isset($_POST['submit'])){   
+        $userId = $_SESSION['ID'];  
         $phone= $_POST['phone'];
         $comment=$_POST['comment'];
         $date = date("Y-m-d h:i:s:A");
-        if(isset($name) && isset($phone) && isset($comment) && isset($date)){
-            $commentSql = "INSERT INTO comment(Names,Phone,Comments,ProductID,Dates) VALUES('$name','$phone','$comment','$id','$date')";
+        if(isset($phone) && isset($comment) && isset($date)){
+            $commentSql = "INSERT INTO comments(Content,Dates,Phone,ProductID,UserId) VALUES('$comment','$date','$phone','$id','$userId')";
             $commentQuery = $conn->query($commentSql);
             ?>
                 <script>
-                    window.location= "/Nhom09_WebBanHang_LoaPolyWebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $id?>"
+                    window.location = "http://localhost/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $id?>"
                 </script>
             <?php
            
         }
     }
-    $listComment = "SELECT * FROM comment Where ProductID = '$id'";
+}
+    $listComment = "SELECT * FROM comments Where ProductID = '$id'";
     $resultListComment = $conn->query($listComment); 
     $conn->close(); 
 ?>
@@ -169,9 +173,8 @@
             ?>
             <li>
               <span><?php echo $row['Dates'] ?></span></br>
-              <span style=" font-size: 18px;
-               font-weight: bold;"><?php echo $row['Names'] ?></span></br>
-              <span style="color:gray"><?php echo $row['Comments'] ?></span></br>  
+             
+              <span style="color:gray"><?php echo $row['Content'] ?></span></br>  
             </li>
 
             <?php
@@ -185,7 +188,6 @@
         <span class="info-d d-first">Be the first to review “<?php echo $ProductN?>”</span><br>
         <span class="info-d">Your phone will not be published. Required fields are marked *</span>  
         <form id="formComment" method="POST">
-            <input type="text" name="name" placeholder="Your name">
             <input type="text" name="phone" placeholder="Your phone">
             <input type="text" name="comment" placeholder="Your comment">
             <input id="sendComment" type="submit" name="submit" value="Comment Now">

@@ -12,7 +12,6 @@
         {
             while($row = $result->fetch_assoc()) {
                 $_SESSION['Email'] = $email;
-                
                 header('location:/Nhom09_WebBanHang_LoaPoly/MyAdmin/_LayoutAdmin.php');
             }
         }else{

@@ -142,7 +142,11 @@
                                 case 'lgPayment':include_once './loginPayment.php';
                                 break; 
                                 case 'OrderSS':include_once './OrderSuccess.php'; 
+<<<<<<< HEAD
                                 break; 
+=======
+                                break;
+>>>>>>> Thietnvph38815
                                 case 'ProductByCategory':include_once './ProductByCategory.php'; 
                                 break; 
                             }
