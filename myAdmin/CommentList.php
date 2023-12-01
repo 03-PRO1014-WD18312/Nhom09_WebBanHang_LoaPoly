@@ -20,13 +20,13 @@
 <?php
 
 
-$sql = "SELECT * FROM comment"; 
+$sql = "SELECT * FROM comments"; 
 $result = $conn->query($sql); 
 
 if(!isset($_SESSION['Email'])){
     ?>
         <script>
-            window.location="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
+            window.location="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
         </script>
     <?php   
 }
@@ -53,13 +53,21 @@ include '../Assets/ConnectDB.php';
     if ($result->num_rows > 0) 
             {
              while($row = $result->fetch_assoc()) {
+                $userId = $row['UserId'];
+                $sqlUser = "SELECT * FROM user inner join comments on user.UserID = '$userId'"; 
+                $sqlResult = $conn->query($sqlUser); 
+                $name = '';
+                while($rowUser = $sqlResult->fetch_assoc()) {
+                    $name = $rowUser['UserName'];
+                    
+                }
                         ?>
                         <tr>
-                            <td><?php echo $row['Names'] ?></td>
+                            <td><?php echo $name  ?></td>
                             <td><?php echo $row['Phone'] ?></td>
-                            <td><?php echo $row['Comments'] ?></td>
+                            <td><?php echo $row['Content'] ?></td>
                             <td><?php echo $row['Dates'] ?></td>
-                            <td><a href ="/MyWeb/myAdmin/DeleteComment.php?id=<?php echo $row['ID'] ?>">[DELETE]</a></td>
+                            <td><a href ="/Nhom09_WebBanHang_LoaPoly/myAdmin/DeleteComment.php?id=<?php echo $row['CommentId'] ?>">[DELETE]</a></td>
                         </tr>
                         <?php
                 }
