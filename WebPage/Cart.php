@@ -71,7 +71,7 @@ include '../Assets/ConnectDB.php';
              </div>
              <div style="width: 1px;height:500px;background-color: white;"></div>
     </div>
-            <h2 style="position:relative;left:1300px;margin-top:20px;margin-bottom:20px">Total: $<span><?php echo $totalPriceProduct ?></span>.00</h2>
+            <h2 style="position:relative;left:1100px;margin-top:20px;margin-bottom:20px">Total: $<span><?php echo $totalPriceProduct ?></span>.00</h2>
           
  <?php
                                  }else {
