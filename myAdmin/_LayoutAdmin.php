@@ -76,7 +76,7 @@
                                ?></a></li>
                             <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                             <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="Nhom09_WebBanHang_LoaPoly/ProcessLogoutAD.php?id=0">Logout</a></li>
+                            <li><a class="dropdown-item" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/ProcessLogoutAD.php?id=0">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -99,7 +99,8 @@
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProductList">Product</a>
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=listCate">Category</a>
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=Order">Order</a>
-                                        <a id="ProcessOrder" class="nav-link" href="Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProcessOrder">Customer Order(<span style="color:red;font-weight:bold" id="quantityOR"><?php echo $dem ?></span>)</a>
+                                        <a id="ProcessOrder" class="nav-link" href="
+                                        /Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProcessOrder">Customer Order(<span style="color:red;font-weight:bold" id="quantityOR"><?php echo $dem ?></span>)</a>
                                       
                                         <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=myComment">Comment</a>
                                         
