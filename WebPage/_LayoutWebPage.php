@@ -61,9 +61,9 @@
                         <div class="header__vertical-2"></div>
                         <li><a href="">Support</a></li>
                         <div class="header__vertical-2"></div>
-                        <li id="cart-option" style="position:relative" ><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"><i class="fas fa-shopping-cart"></i></a>
+                        <li id="cart-option" style="position:relative" ><a href="http://localhost/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart"><i class="fas fa-shopping-cart"></i></a>
                         <ul id="view-cart-option" style="position:absolute" style="width:100px;height:300px">
-                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart">Giỏ Hàng </a></li>
+                            <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold"><a href="http://localhost/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Cart">Giỏ Hàng </a></li>
                             <li style="width:120px;height:30px;background-color:orange;text-align:center;font-weight:bold;margin-top:3px"><a href="/MyWeb/WebPage/_LayoutWebPage.php?_LayoutWeb=Order">View Order</a></li>
                     </ul>
                         </li>

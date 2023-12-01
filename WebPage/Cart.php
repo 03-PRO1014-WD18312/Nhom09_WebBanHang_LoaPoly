@@ -71,7 +71,7 @@ include '../Assets/ConnectDB.php';
              </div>
              <div style="width: 1px;height:500px;background-color: white;"></div>
     </div>
-            <h2 style="position:relative;left:1300px;margin-top:20px;margin-bottom:20px">Total: $<span><?php echo $totalPriceProduct ?></span>.00</h2>
+            <h2 style="position:relative;left:1100px;margin-top:20px;margin-bottom:20px">Total: $<span><?php echo $totalPriceProduct ?></span>.00</h2>
           
  <?php
                                  }else {
@@ -100,7 +100,7 @@ include '../Assets/ConnectDB.php';
     </div>
     
     <div style="margin-left:700px" class="cartOptions">
-        <div class="gotoshop"><span><a href="/Nhom09_WedBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Payment">CHECK OUT</a></span></div>
+        <div class="gotoshop"><span><a href="http://localhost/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Payment">CHECK OUT</a></span></div>
     </div>
 
 </div>
