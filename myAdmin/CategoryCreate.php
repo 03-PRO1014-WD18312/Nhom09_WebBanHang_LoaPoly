@@ -16,10 +16,10 @@ include '../Assets/ConnectDB.php';
 
 if(isset($_POST['submit'])){
 $CategoryName = $_POST['CategoryName']; 
-// $CategoryStatus = $_POST['Status'];
-if(isset($CategoryName) && isset($CategoryStatus)){
+
+if(isset($CategoryName) ){
     $sql = "INSERT INTO category(CategoryName,CategoryStatus)
-     VALUES('$CategoryName','$CategoryStatus')";
+     VALUES('$CategoryName','avtive')";
     if ($conn->query($sql) === TRUE) {
         ?>
             <script>
@@ -72,7 +72,6 @@ if(isset($CategoryName) && isset($CategoryStatus)){
 
 <form id="form" action="" method="POST" enctype="multipart/form-data">
      Name <input type="Text" name="CategoryName" require />
-     <!-- Status<input type="Text" name="Status" require/> -->
     <input type="submit" name="submit" value="Create" />
 </form>
 </html>

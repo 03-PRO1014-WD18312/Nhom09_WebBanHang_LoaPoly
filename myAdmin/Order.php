@@ -2,7 +2,7 @@
 if(!isset($_SESSION['Email'])){
     ?>
         <script>
-            window.location="/Nhom09_WebBanHang_LoaPoly/WebPage/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
+            window.location="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
         </script>
     <?php   
 }
