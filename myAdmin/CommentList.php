@@ -4,15 +4,17 @@
         border:3px solid orange
     }
     #main-comment{
-        width:90%;
-        height:auto; 
+        width:100%;
+        height:100%; 
         text-align:center;
         margin:0 auto;
-        margin-top:30px
     }
 
     th,td{
         border:1px solid gray
+    }
+    th{
+        background-color: rgb(218, 206, 206);
     }
    
 </style>

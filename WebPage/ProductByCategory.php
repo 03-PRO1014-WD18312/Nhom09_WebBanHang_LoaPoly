@@ -28,7 +28,7 @@
 
 
 <div class="container-prod-cate">
-<h1>Lọc sản phẩm theo danh mục</h1>
+<h1>Filter products by category</h1>
     <div class="prod-category-wrapperr">
     <?php
             if ($result->num_rows > 0) 

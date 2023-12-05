@@ -29,6 +29,8 @@ $conn->close();
     }
     th{
         height:70px; 
+        width: 10px;
+        background-color: rgb(218, 206, 206);
     }
     #tr th{
         font-size:20px; 
@@ -37,6 +39,8 @@ $conn->close();
     h1{
         font-weight:bold; 
     }
+
+
 </style>
 <html>
     <head>
@@ -49,6 +53,7 @@ $conn->close();
                 <th>Image</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>DetailedDescription</th>
                 <th>Price</th>
                 <th>Category</th>
                 <th>Status</th>
@@ -63,6 +68,7 @@ $conn->close();
                     <td> <img width="140" height="140" src="../Assets/Image/<?php echo $row['ProductImage'] ?>"/></td>
                     <td><?php echo $row['ProductName'] ?></td>
                     <td><?php echo $row['ProductDescription'] ?></td>
+                    <td><?php echo $row['DetailedDescription'] ?></td>
                     <td><?php echo $row['OldPrice'] ?></td>  
                     <td><?php echo $row['CategoryName'] ?></td>               
                     <td><?php echo $row['ProductStatus'] ?></td>

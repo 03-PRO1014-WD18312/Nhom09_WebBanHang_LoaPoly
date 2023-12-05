@@ -21,6 +21,7 @@
 if(isset($_POST['submit'])){ 
         $ProductName = $_POST['ProductName']; 
         $Description = $_POST['Description'];
+        $DetailedDescription = $_POST['DetailedDescription'];
         $OldPrice = $_POST['OldPrice']; 
         $NewPrice = $_POST['NewPrice']; 
         $Status = $_POST['Status']; 
@@ -32,9 +33,9 @@ if(isset($_POST['submit'])){
             $tmp_name = $_FILES['Image']['tmp_name']; 
     }
 
-if(isset($ProductName) && isset($Description) && isset($OldPrice) && isset($NewPrice) && isset($Status)&&isset($CategoryID)){
+if(isset($ProductName) && isset($Description) && isset($DetailedDescription) && isset($OldPrice) && isset($NewPrice) && isset($Status)&&isset($CategoryID)){
     move_uploaded_file($tmp_name,'../Assets/Image/'.$Image);
-    $sql = "Update product set ProductName = '$ProductName',ProductDescription='$Description',OldPrice='$OldPrice',NewPrice = '$NewPrice',ProductStatus='$Status',CategoryID = '$CategoryID',ProductImage = '$Image' Where ProductID = '$id'";
+    $sql = "Update product set ProductName = '$ProductName',ProductDescription='$Description',DetailedDescription='$DetailedDescription',OldPrice='$OldPrice',NewPrice = '$NewPrice',ProductStatus='$Status',CategoryID = '$CategoryID',ProductImage = '$Image' Where ProductID = '$id'";
     if ($conn->query($sql) === TRUE) {
         ?>
         <script>
@@ -89,6 +90,7 @@ if(isset($ProductName) && isset($Description) && isset($OldPrice) && isset($NewP
     <form id="form"  method="POST" enctype="multipart/form-data">
          Name <input type="Text" name="ProductName" value="<?php echo $row['ProductName']?>" require />
          Description <input type="Text" name="Description" value="<?php echo $row['ProductDescription']?>" require />
+         Detailed Description <textarea name="DetailedDescription" id="" cols="30" rows="10" require><?php echo $row['DetailedDescription']?></textarea>
          Old Price <input type="number" name="OldPrice" value="<?php echo $row['OldPrice']?>" require />
          New Price <input type="number" name="NewPrice" value="<?php echo $row['NewPrice']?>" require />
          Status <input type="Text" name="Status"  value="<?php echo $row['ProductStatus']?>" require/>

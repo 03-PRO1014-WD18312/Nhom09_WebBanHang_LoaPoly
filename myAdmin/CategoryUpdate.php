@@ -22,9 +22,9 @@ if(!isset($_SESSION['Email'])){
 $CategoryName = $_POST['CategoryName']; 
 // $CategoryStatus = $_POST['CategoryStatus'];
 
-if(isset($CategoryName) && isset($CategoryStatus)){
+if(isset($CategoryName) ){
 
-    $sql = "Update category set CategoryName = '$CategoryName',CategoryStatus='$CategoryStatus' Where CategoryID = '$id'";
+    $sql = "Update category set CategoryName = '$CategoryName' Where CategoryID = '$id'";
     if ($conn->query($sql) === TRUE) {
         ?>
             <script>

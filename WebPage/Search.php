@@ -1,8 +1,8 @@
-             <div class="Body__Porduct-discount">    
-            <?php
-            include '../Assets/ConnectDB.php';
-            
-
+  
+    <div class="container-prod-cate">
+    <div class="prod-category-wrapperr">
+           <?php
+            include '../Assets/ConnectDB.php';            
             if(isset($_POST['submit_search'])){
                 $search = $_POST['search'];
                 $sql = "SELECT * FROM `product` WHERE `ProductName` LIKE '%$search%'";
@@ -11,7 +11,8 @@
                     if(mysqli_num_rows($result)>0){
                         while($row=mysqli_fetch_assoc($result)){
                             ?>
-                            <div class="fashion__main-item discount_@item.ProductID" >
+                            <p class="pull"></p>
+                            <div class="electro__main-item discount_@item.ProductID" >
                      <a href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Details&id=<?php echo $row['ProductID'] ?>"> <img width="100%" height="239" src="../Assets/Image/<?php echo $row['ProductImage'] ?>" class="attachment-199x239 size-199x239 wp-post-image" alt="" loading="lazy"></a>
                         <div class="Product__discount-name fashion__Product-name">
                             <span class="discount_ProductName"><?php echo $row['ProductName']?></span>
@@ -47,6 +48,26 @@
                 }
             }
             ?>
-            </div>
+</div>
+</div>
+    <style>
+
+        .container-prod-cate{
+        width: 1300px;
+        height:auto;
+        min-height:max-content;
+        display: flex;
+        flex-direction:column; 
+        justify-content: center;
+        align-items: center;
+        margin:0 auto !important;
+    }
+    .prod-category-wrapperr{
+        width: 100%;
+        height:100%;
+        padding: 50px 0;
+
+    }
+    </style>        
             
             

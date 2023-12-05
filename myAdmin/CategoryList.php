@@ -27,6 +27,7 @@ $conn->close();
     }
     th{
         height:70px; 
+        background-color: rgb(218, 206, 206);
     }
     #tr th{
         font-size:20px; 

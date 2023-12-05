@@ -52,16 +52,16 @@
             <h2 class="register__tt">Register</h2>
             <div id="data__register">
                 <div>
-                    <Label>Username</Label>
-                    <input name="yourName" type="text" placeholder="Your user name" required>
+                    <Label>Username <span style="color: red;" id="error_name"></Label></span>
+                    <input id="yourName" name="yourName" type="text" placeholder="Your user name" required>
                 </div>
                 <div>
-                    <label>Email adress</label>
-                    <input name="email" type="email" placeholder="Example@gmail.com" required>
+                    <label>Email adress<span style="color: red;" id="error_email"></label>
+                    <input id="email" name="email" type="email" placeholder="Example@gmail.com" required>
                 </div>
                 <div>
-                    <label for="">Password</label>
-                    <input name="password" type="password" placeholder="Your password" required>
+                    <label for="">Password<span style="color: red;" id="error_pass"></label>
+                    <input id="password" name="password" type="password" placeholder="Your password" required>
                 </div>
                 <div><span>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</span></div>
             </div>
@@ -71,3 +71,4 @@
         </form>
     </div>
 </div>
+
