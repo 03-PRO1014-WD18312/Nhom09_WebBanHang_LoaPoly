@@ -100,35 +100,35 @@
     <div class="product__fashion">
         <div class="product__fashion-category">
             <div class="fashion__title">
-                <span>LOA BLUTOOH</span>
+                <span>BLUTOOH</span>
             </div>
             <div id="fs__nav" class="fashion__nav">
                 <div class="fashion__slice">
                     <div class="fashion__nav-item">
                         <ul>
-                            <li><a href="">- Bags & Shoes</a></li>
-                            <li><a href="">- Blouses</a></li>
-                            <li><a href="">- Casual Dresses</a></li>
-                            <li><a href="">- For Men</a></li>
-                            <li><a href="">- For Women</a></li>
-                            <li><a href="">- For Children</a></li>
+                            <li><a href="">- Go 3</a></li>
+                            <li><a href="">- Flic 6</a></li>
+                            <li><a href="">- Charge 5</a></li>
+                            <li><a href="">- Xtreme 3</a></li>
+                            <li><a href="">- Bombox 3</a></li>
+                            <li><a href="">- Pulse 5</a></li>
                         </ul>
                     </div>
                     <div class="fashion__nav-item fs__nav">
                         <ul>
-                            <li><a href="">- Hair Accesories</a></li>
-                            <li><a href="">- Jackets</a></li>
-                            <li><a href="">- Jumpsuits</a></li>
-                            <li><a href="">- Kid Fashion</a></li>
-                            <li><a href="">- Scarves</a></li>
-                            <li><a href="">- Skirts</a></li>
+                            <li><a href="">- Party box 110</a></li>
+                            <li><a href="">- Party box Go</a></li>
+                            <li><a href="">- Party box 310</a></li>
+                            <li><a href="">- Party box 710</a></li>
+                            <li><a href="">- Tune 3</a></li>
+                            <li><a href="">- Clip 6</a></li>
                         </ul>
                     </div>
                     <div class="fashion__nav-item fs__nav">
                         <ul>
-                            <li><a href="">- Summer Dresses</a></li>
-                            <li><a href="">- Sunglasses</a></li>
-                            <li><a href="">- T-Shirt</a></li>
+                            <li><a href="">- JBL Bar 300</a></li>
+                            <li><a href="">- JBL Bar 500</a></li>
+                            <li><a href="">- JBL Stage 180</a></li>
                         </ul>
                     </div>
                 </div>
@@ -271,39 +271,39 @@
             <div class="product__fashion-category">
                 <div class="fashion__title fs__title-sport">
                     <span><i class="fas fa-futbol"></i></span>
-                    <span>LOA VI TÍNH</span>
+                    <span>ELECTRIC</span>
                     <div class="sport__vertical"></div>
                 </div>
                 <div id="fs__nav" class="fashion__nav">
-                    <div class="fashion__slice slice__sport">
-                        <div class="item__sport">
-                            <ul>
-                                <li><a href="">- Bags & Shoes</a></li>
-                                <li><a href="">- Blouses</a></li>
-                                <li><a href="">- Casual Dresses</a></li>
-                                <li><a href="">- For Men</a></li>
-                                <li><a href="">- For Women</a></li>
-                                <li><a href="">- For Children</a></li>
-                            </ul>
-                        </div>
-                        <div class="item__sport fs__nav">
-                            <ul>
-                                <li><a href="">- Hair Accesories</a></li>
-                                <li><a href="">- Jackets</a></li>
-                                <li><a href="">- Jumpsuits</a></li>
-                                <li><a href="">- Kid Fashion</a></li>
-                                <li><a href="">- Scarves</a></li>
-                                <li><a href="">- Skirts</a></li>
-                            </ul>
-                        </div>
-                        <div class="item__sport fs__nav">
-                            <ul>
-                                <li><a href="">- Summer Dresses</a></li>
-                                <li><a href="">- Sunglasses</a></li>
-                                <li><a href="">- T-Shirt</a></li>
-                            </ul>
-                        </div>
+                <div class="fashion__slice">
+                    <div class="fashion__nav-item">
+                        <ul>
+                            <li><a href="">- Go 3</a></li>
+                            <li><a href="">- Flic 6</a></li>
+                            <li><a href="">- Charge 5</a></li>
+                            <li><a href="">- Xtreme 3</a></li>
+                            <li><a href="">- Bombox 3</a></li>
+                            <li><a href="">- Pulse 5</a></li>
+                        </ul>
                     </div>
+                    <div class="fashion__nav-item fs__nav">
+                        <ul>
+                            <li><a href="">- Party box 110</a></li>
+                            <li><a href="">- Party box Go</a></li>
+                            <li><a href="">- Party box 310</a></li>
+                            <li><a href="">- Party box 710</a></li>
+                            <li><a href="">- Tune 3</a></li>
+                            <li><a href="">- Clip 6</a></li>
+                        </ul>
+                    </div>
+                    <div class="fashion__nav-item fs__nav">
+                        <ul>
+                            <li><a href="">- JBL Bar 300</a></li>
+                            <li><a href="">- JBL Bar 500</a></li>
+                            <li><a href="">- JBL Stage 180</a></li>
+                        </ul>
+                    </div>
+                </div>
                     <div class="fashion__direction">
                         <div class="fashion__direction-item fs__d-oneSport"><i class="fas fa-long-arrow-alt-left"></i></div>
                         <div class="fashion__direction-item fs__d-twoSport"><i class="fas fa-long-arrow-alt-right"></i></div>
@@ -321,38 +321,38 @@
                 <div class="product__fashion-category">
                     <div class="fashion__title product__electronic">
                         <span><i class="fas fa-star-of-david"></i></span>
-                        <span>HÀNG CŨ </span>
+                        <span>SOUND BAR</span>
                     </div>
-                    <div id="electro__nav" class="fashion__nav">
-                        <div class="fashion__slice electro__slice ">
-                            <div class="electro__item">
-                                <ul>
-                                    <li><a href="">- Bags & Shoes</a></li>
-                                    <li><a href="">- Blouses</a></li>
-                                    <li><a href="">- Casual Dresses</a></li>
-                                    <li><a href="">- For Men</a></li>
-                                    <li><a href="">- For Women</a></li>
-                                    <li><a href="">- For Children</a></li>
-                                </ul>
-                            </div>
-                            <div class="electro__item">
-                                <ul>
-                                    <li><a href="">- Hair Accesories</a></li>
-                                    <li><a href="">- Jackets</a></li>
-                                    <li><a href="">- Jumpsuits</a></li>
-                                    <li><a href="">- Kid Fashion</a></li>
-                                    <li><a href="">- Scarves</a></li>
-                                    <li><a href="">- Skirts</a></li>
-                                </ul>
-                            </div>
-                            <div class="electro__item">
-                                <ul>
-                                    <li><a href="">- Summer Dresses</a></li>
-                                    <li><a href="">- Sunglasses</a></li>
-                                    <li><a href="">- T-Shirt</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div id="fs__nav" class="fashion__nav">
+                <div class="fashion__slice">
+                    <div class="fashion__nav-item">
+                        <ul>
+                            <li><a href="">- Go 3</a></li>
+                            <li><a href="">- Flic 6</a></li>
+                            <li><a href="">- Charge 5</a></li>
+                            <li><a href="">- Xtreme 3</a></li>
+                            <li><a href="">- Bombox 3</a></li>
+                            <li><a href="">- Pulse 5</a></li>
+                        </ul>
+                    </div>
+                    <div class="fashion__nav-item fs__nav">
+                        <ul>
+                            <li><a href="">- Party box 110</a></li>
+                            <li><a href="">- Party box Go</a></li>
+                            <li><a href="">- Party box 310</a></li>
+                            <li><a href="">- Party box 710</a></li>
+                            <li><a href="">- Tune 3</a></li>
+                            <li><a href="">- Clip 6</a></li>
+                        </ul>
+                    </div>
+                    <div class="fashion__nav-item fs__nav">
+                        <ul>
+                            <li><a href="">- JBL Bar 300</a></li>
+                            <li><a href="">- JBL Bar 500</a></li>
+                            <li><a href="">- JBL Stage 180</a></li>
+                        </ul>
+                    </div>
+                </div>
                         <div class="fashion__direction">
                             <div class="fashion__direction-item direction__electro-left"><i class="fas fa-long-arrow-alt-left"></i></div>
                             <div class="fashion__direction-item direction__electro-right"><i class="fas fa-long-arrow-alt-right"></i></div>

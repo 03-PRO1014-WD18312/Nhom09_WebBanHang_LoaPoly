@@ -10,6 +10,8 @@
     }
 </style>
 
+<
+
 <?php
 include '../Assets/ConnectDB.php'; 
   //foreach ,while
@@ -33,7 +35,7 @@ include '../Assets/ConnectDB.php';
         $result = $conn->query($sql); 
     }
 ?>
-       
+    
         <div style="width:1200px;height:auto;margin:0 auto; position: relative;display:flex">
             <div style="width: 100%;text-align: center;margin-top:20px;height:auto">
                 <h1 style="width:1200px;height:auto;margin:0 auto; background-color:gray;color:white">Your Cart</h1>

@@ -17,6 +17,7 @@ $OldPrice = $_POST['OldPrice'];
 $NewPrice = $_POST['NewPrice']; 
 $Status = $_POST['Status']; 
 $CategoryID = $_POST['CategoryID']; 
+$DetailedDescription = $_POST['DetailedDescription'];
 if($_FILES['Image']['name'] == ''){
     $error_Image = '<span style="color:red">(*)</span>';
 }else{
@@ -27,8 +28,8 @@ if($_FILES['Image']['name'] == ''){
 if(isset($ProductName) && isset($Description) && isset($OldPrice) && isset($NewPrice) && isset($Status)&&isset($CategoryID)
 && isset($Image)){
     move_uploaded_file($tmp_name,'../Assets/Image/'.$Image);
-    $sql = "INSERT INTO product(ProductName,ProductDescription,OldPrice,NewPrice,ProductStatus,CategoryID,ProductImage)
-     VALUES('$ProductName','$Description','$OldPrice','$NewPrice','$Status','$CategoryID','$Image')";
+    $sql = "INSERT INTO product(ProductName,ProductDescription,DetailedDescription,OldPrice,NewPrice,ProductStatus,CategoryID,ProductImage)
+     VALUES('$ProductName','$Description','$DetailedDescription','$OldPrice','$NewPrice','$Status','$CategoryID','$Image')";
     if ($conn->query($sql) === TRUE) {
     ?>
         <script>
@@ -82,7 +83,8 @@ if(isset($ProductName) && isset($Description) && isset($OldPrice) && isset($NewP
 
 <form id="form" action="" method="POST" enctype="multipart/form-data">
      Name <input placeholder="Tên sản phẩm" type="Text" name="ProductName" require />
-     Description <input placeholder="Mô tả sản phẩm" type="Text" name="Description" require/>
+     Description <input placeholder="Mô tả sơ lược" type="Text" name="Description" require/>
+     Detailed Description <textarea name="DetailedDescription" id="" cols="30" rows="10" placeholder="Mô tả chi tiết" require></textarea>
      Old Price <input placeholder="Giá cũ sản phẩm" type="number" name="OldPrice"  require/>
      New Price <input placeholder="Giá mới sản phẩm" type="number" name="NewPrice" require/>     
      Product Status <input placeholder="Trạng thái sản phẩm" type="Text" name="Status" require />

@@ -13,7 +13,15 @@
         $phone= $_POST['phone'];
         $comment=$_POST['comment'];
         $date = date("Y-m-d h:i:s:A");
-        if(isset($phone) && isset($comment) && isset($date)){
+        if(isset($userId) == null){
+            ?>
+            <script>
+                alert("You need login to comment");
+                window.location="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Login";
+            </script>
+        <?php   
+        }else
+        if(isset($phone) && isset($comment) && isset($date) ){
             $commentSql = "INSERT INTO comments(Content,Dates,Phone,ProductID,UserId) VALUES('$comment','$date','$phone','$id','$userId')";
             $commentQuery = $conn->query($commentSql);
             ?>
@@ -83,70 +91,24 @@
             </span>
         </div>
     </div>
-                <?php
-                }  
-            } 
-            ?>
+
    
 </div>
-<style>
-    .main-view-more{
-        width: 1200px;
-        height:auto;
-    }
-    #sendComment{
-        font-size:20px;
-    }
-
-    #sendComment:hover{
-        cursor: pointer;
-        background-color:olivedrab;
-        color:white;
-    }
-    .main-comment{
-        width: 1200px;
-        height:auto;
-        margin-left:40px;
-        position: relative;
-        bottom: 30px;
-    }
-    .main-comment li{
-        width: 90%;
-        border-top: 1px solid rgba(128, 128, 128, 0.219);
-        margin-top:10px;
-    }
-    #formComment{
-        width: 1200px;
-        height:300px;
-       
-        display:flex;
-        flex-direction: column;
-        margin-left:40px;
-        justify-content: space-around;
-    }
-    #formComment input{
-        width: 93%;
-        height:40px;
-        outline: none;
-        padding-left: 20px;
-        border: 1px solid rgba(128, 128, 128, 0.219);
-    }
-</style>
 <div class="details-view-more">
     <ul>
-        <li class="item-view-1">Miêu Tả</li>
-        <li class="item-view-2">Đánh Giá</li>
-        <li class="item-view-3">Thương hiệu</li>
+        <li class="item-view-1">Describe</li>
+        <li class="item-view-2">Comment</li>
+        <li class="item-view-3"></li>
     </ul>
 </div>
 <div class="main-view-more">
     <ul class="main-view-description">
-        <li class="Description-item">
-        Loa Bluetooth JBL có thiết kế ấn tượng nhờ sự kết hợp giữa đèn LED đẹp mắt và đèn nhấp nháy. Cùng với đó là chất lượng âm thanh mạnh mẽ với công suất 800W cho âm trầm sâu hơn và rất nhiều tính năng nổi bật khác của loa karaoke mà bạn có thể ghé thăm CellphoneS để tìm hiểu thêm nhé!
-       </li>
-        <li class="Description-item">Loa Bluetooth JBL PartyBox không chỉ sở hữu phong cách ánh sáng đồng bộ với nhịp điệu âm nhạc khiến mọi thứ trở nên nổi bật mà còn khiến mọi niềm vui bùng nổ với công suất loa 800W.</li>
-        <li class="Description-item">Để có thể đồng hành cùng bạn trong mọi bữa tiệc từ trong nhà đến ngoài trời, JBL PartyBox đã sử dụng chất liệu nhựa cao cấp có khả năng chống va đập tốt để hoàn thiện phần vỏ loa, kết hợp với đó. có khả năng chống nước IPX4..</li>
+        <li><?php echo $row['DetailedDescription'] ?></li>
     </ul>
+    <?php
+                }  
+            } 
+            ?>
     <div class="main-view-review">
         <div class="review-header">
             <div class="d-star">
@@ -194,3 +156,47 @@
         </form> 
     </div>
 </div>
+
+<style>
+    .main-view-more{
+        width: 1200px;
+        height:auto;
+    }
+    #sendComment{
+        font-size:20px;
+    }
+
+    #sendComment:hover{
+        cursor: pointer;
+        background-color:olivedrab;
+        color:white;
+    }
+    .main-comment{
+        width: 1200px;
+        height:auto;
+        margin-left:40px;
+        position: relative;
+        bottom: 30px;
+    }
+    .main-comment li{
+        width: 90%;
+        border-top: 1px solid rgba(128, 128, 128, 0.219);
+        margin-top:10px;
+    }
+    #formComment{
+        width: 1200px;
+        height:300px;
+       
+        display:flex;
+        flex-direction: column;
+        margin-left:40px;
+        justify-content: space-around;
+    }
+    #formComment input{
+        width: 93%;
+        height:40px;
+        outline: none;
+        padding-left: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.219);
+    }
+</style>

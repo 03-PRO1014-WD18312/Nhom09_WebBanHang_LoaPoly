@@ -28,6 +28,9 @@ $conn->close();
         text-align:center;
         padding:10px;
     }
+    th{
+        background-color: rgb(218, 206, 206);
+    }
 </style>
 <table #id="main-order">
     <tr>
