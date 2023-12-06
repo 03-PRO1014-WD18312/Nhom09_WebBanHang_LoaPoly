@@ -10,7 +10,6 @@
    { 
     if(isset($_POST['submit'])){   
         $userId = $_SESSION['ID'];  
-        $phone= $_POST['phone'];
         $comment=$_POST['comment'];
         $date = date("Y-m-d h:i:s:A");
         if(isset($userId) == null){
@@ -21,8 +20,8 @@
             </script>
         <?php   
         }else
-        if(isset($phone) && isset($comment) && isset($date) ){
-            $commentSql = "INSERT INTO comments(Content,Dates,Phone,ProductID,UserId) VALUES('$comment','$date','$phone','$id','$userId')";
+        if( isset($comment) && isset($date) ){
+            $commentSql = "INSERT INTO comments(Content,Dates,ProductID,UserId) VALUES('$comment','$date','$id','$userId')";
             $commentQuery = $conn->query($commentSql);
             ?>
                 <script>
@@ -33,7 +32,7 @@
         }
     }
 }
-    $listComment = "SELECT * FROM comments Where ProductID = '$id'";
+    $listComment = "SELECT * FROM comments inner join user on user.UserId = comments.UserId Where ProductID = '$id'";
     $resultListComment = $conn->query($listComment); 
     $conn->close(); 
 ?>
@@ -122,8 +121,7 @@
                 </ul>
             </div>
             <div>
-                <span class="review-all-in">Reviews for "<?php echo $ProductN ?>"</span><br>
-                <span>There are no reviews yet.</span>
+
             </div>
         </div> 
         <ul class="main-comment">
@@ -134,7 +132,7 @@
                 while($row = $resultListComment->fetch_assoc()) {        
             ?>
             <li>
-              <span><?php echo $row['Dates'] ?></span></br>
+              <span><?php echo $row['UserName'] ?></span></br>
              
               <span style="color:gray"><?php echo $row['Content'] ?></span></br>  
             </li>
@@ -146,18 +144,19 @@
             ?>
             
         </ul>
-
-        <span class="info-d d-first">Be the first to review “<?php echo $ProductN?>”</span><br>
-        <span class="info-d">Your phone will not be published. Required fields are marked *</span>  
+        <span class="info-d d-first">Review about “<?php echo $ProductN?>”</span><br>
         <form id="formComment" method="POST">
-            <input type="text" name="phone" placeholder="Your phone">
-            <input type="text" name="comment" placeholder="Your comment">
+            <textarea class="comment" name="comment" id="comment" cols="10" rows="10" placeholder="Your comment"></textarea>
+            <!-- <input type="text" name="comment" placeholder="Your comment"> -->
             <input id="sendComment" type="submit" name="submit" value="Comment Now">
         </form> 
     </div>
 </div>
 
 <style>
+    .comment {
+        margin-right: 100px;
+    }
     .main-view-more{
         width: 1200px;
         height:auto;

@@ -128,12 +128,7 @@ if(isset($_SESSION['ID'])){
         height: 40px;
         margin-top: 20px;
     }
-    h1{
-        width: 1200px;
-        height:auto,
-        margin:0 auto;
-        text-align:center 
-    }
+
 </style>
 
     <div id="Payment">

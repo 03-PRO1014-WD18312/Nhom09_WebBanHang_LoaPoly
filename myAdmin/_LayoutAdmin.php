@@ -48,6 +48,7 @@
             <title>Dashboard - SB Admin</title>
             <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
             <link href="css/styles.css" rel="stylesheet" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
         </head>
         <body class="sb-nav-fixed">
@@ -129,7 +130,7 @@
                                     </nav>
                                 </div>
                                 <div class="sb-sidenav-menu-heading">Addons</div>
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=Charts">
                                     <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                     Charts
                                 </a>
@@ -181,6 +182,8 @@
                                 case 'AdminRole':include_once './AdminRole.php'; 
                                 break;
                                 case 'UserRole':include_once './UserRole.php'; 
+                                break;
+                                case 'Charts':include_once './Charts.php'; 
                                 break;
                             }
                         }else{

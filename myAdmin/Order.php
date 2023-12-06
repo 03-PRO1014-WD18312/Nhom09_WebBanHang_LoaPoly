@@ -13,9 +13,6 @@ $result = $conn->query($sql);
 $conn->close();
 ?>
 
-
-
-
 <style>
     #main-order{
         width: 90%;

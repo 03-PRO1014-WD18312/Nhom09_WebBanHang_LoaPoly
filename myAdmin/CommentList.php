@@ -44,7 +44,6 @@ include '../Assets/ConnectDB.php';
     <table id="main-comment">
         <tr>
             <th>Name Customer</th>
-            <th>Phone</th>
             <th>Comment</th>
             <th>Date</th>
             <th>Options</th>
@@ -66,7 +65,6 @@ include '../Assets/ConnectDB.php';
                         ?>
                         <tr>
                             <td><?php echo $name  ?></td>
-                            <td><?php echo $row['Phone'] ?></td>
                             <td><?php echo $row['Content'] ?></td>
                             <td><?php echo $row['Dates'] ?></td>
                             <td><a href ="/Nhom09_WebBanHang_LoaPoly/myAdmin/DeleteComment.php?id=<?php echo $row['CommentId'] ?>">[DELETE]</a></td>
