@@ -82,7 +82,7 @@
                 <div class="header__Second">
                     <div class="header__logo">
                         
-                     <h1 style="color:white"> LOA FOLY</h1>
+                     <h1  style="color:white"> <a style="color:white" href="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php">LOA POLY</a></h1>
                     </div>
                     <div class="header__nav">
                         <ul>

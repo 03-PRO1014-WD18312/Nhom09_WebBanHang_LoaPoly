@@ -23,8 +23,7 @@ if(isset($_POST['submit'])){
         $Description = $_POST['Description'];
         $DetailedDescription = $_POST['DetailedDescription'];
         $OldPrice = $_POST['OldPrice']; 
-        $NewPrice = $_POST['NewPrice']; 
-        $Status = $_POST['Status']; 
+        $NewPrice = $_POST['NewPrice'];  
         $CategoryID = $_POST['CategoryID']; 
         if($_FILES['Image']['name'] == ''){
             $Image = $_POST['Image']; 
@@ -33,9 +32,9 @@ if(isset($_POST['submit'])){
             $tmp_name = $_FILES['Image']['tmp_name']; 
     }
 
-if(isset($ProductName) && isset($Description) && isset($DetailedDescription) && isset($OldPrice) && isset($NewPrice) && isset($Status)&&isset($CategoryID)){
+if(isset($ProductName) && isset($Description) && isset($DetailedDescription) && isset($OldPrice) && isset($NewPrice) &&isset($CategoryID)){
     move_uploaded_file($tmp_name,'../Assets/Image/'.$Image);
-    $sql = "Update product set ProductName = '$ProductName',ProductDescription='$Description',DetailedDescription='$DetailedDescription',OldPrice='$OldPrice',NewPrice = '$NewPrice',ProductStatus='$Status',CategoryID = '$CategoryID',ProductImage = '$Image' Where ProductID = '$id'";
+    $sql = "Update product set ProductName = '$ProductName',ProductDescription='$Description',DetailedDescription='$DetailedDescription',OldPrice='$OldPrice',NewPrice = '$NewPrice',CategoryID = '$CategoryID',ProductImage = '$Image' Where ProductID = '$id'";
     if ($conn->query($sql) === TRUE) {
         ?>
         <script>
@@ -85,7 +84,11 @@ if(isset($ProductName) && isset($Description) && isset($DetailedDescription) && 
 <head>
     <title>Update Product</title>
 </head>
-
+<?php 
+$sql = "SELECT * FROM category";
+$result = $conn->query($sql);
+$conn->close();
+?>
 
     <form id="form"  method="POST" enctype="multipart/form-data">
          Name <input type="Text" name="ProductName" value="<?php echo $row['ProductName']?>" require />
@@ -93,8 +96,16 @@ if(isset($ProductName) && isset($Description) && isset($DetailedDescription) && 
          Detailed Description <textarea name="DetailedDescription" id="" cols="30" rows="10" require><?php echo $row['DetailedDescription']?></textarea>
          Old Price <input type="number" name="OldPrice" value="<?php echo $row['OldPrice']?>" require />
          New Price <input type="number" name="NewPrice" value="<?php echo $row['NewPrice']?>" require />
-         Status <input type="Text" name="Status"  value="<?php echo $row['ProductStatus']?>" require/>
-         Category <input type="Text" name="CategoryID" value="<?php echo $row['CategoryID']?>" require/>
+         Category<select name="CategoryID" id="">
+        <?php      
+            if ($result->num_rows > 0) 
+            {
+                while($row = $result->fetch_assoc()){ 
+                    ?>
+                        <option value="<?php echo $row['CategoryID'] ?>"><?php echo $row['CategoryName'] ?></option>
+                    <?php
+                    }} ?>
+    </select>
          <input type="hidden" name="Image" value="<?php echo $row['ProductImage']?>" require />
          Image <input type="file" name="Image"  />
         <input type="submit" name='submit' value="Update" />

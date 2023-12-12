@@ -56,7 +56,6 @@ $conn->close();
                 <th>DetailedDescription</th>
                 <th>Price</th>
                 <th>Category</th>
-                <th>Status</th>
                 <th>Options</th>
             </tr>
             <?php
@@ -71,7 +70,6 @@ $conn->close();
                     <td><?php echo $row['DetailedDescription'] ?></td>
                     <td><?php echo $row['OldPrice'] ?></td>  
                     <td><?php echo $row['CategoryName'] ?></td>               
-                    <td><?php echo $row['ProductStatus'] ?></td>
                     <td>[<a href="../myAdmin/_LayoutAdmin.php?myLayout=ProductCreate">Create</a>]
                     [<a href="../myAdmin/_LayoutAdmin.php?myLayout=ProductUpdate&id=<?php echo $row['ProductID'] ?>">Update</a>]
                     [<a href="../myAdmin/_LayoutAdmin.php?myLayout=ProductDelete&id=<?php echo $row['ProductID'] ?>">Delete</a>]</td>

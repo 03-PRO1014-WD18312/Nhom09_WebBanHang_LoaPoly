@@ -1,5 +1,5 @@
 <?php
-ob_start(); 
+// ob_start(); 
     include '../Assets/ConnectDB.php'; 
     if(isset($_POST['submit'])){
         $userName = $_POST['yourName']; 

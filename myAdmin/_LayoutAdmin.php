@@ -48,12 +48,13 @@
             <title>Dashboard - SB Admin</title>
             <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
             <link href="css/styles.css" rel="stylesheet" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
         </head>
         <body class="sb-nav-fixed">
             <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
                 <!-- Navbar Brand-->
-                <a class="navbar-brand ps-3" href="#">Admin</a>
+                <a class="navbar-brand ps-3" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=ProductList">Admin</a>
                 <!-- Sidebar Toggle-->
                 <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
                 <!-- Navbar Search-->
@@ -129,11 +130,11 @@
                                     </nav>
                                 </div>
                                 <div class="sb-sidenav-menu-heading">Addons</div>
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=Charts">
                                     <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                     Charts
                                 </a>
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=Tables">
                                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                     Tables
                                 </a>
@@ -181,6 +182,8 @@
                                 case 'AdminRole':include_once './AdminRole.php'; 
                                 break;
                                 case 'UserRole':include_once './UserRole.php'; 
+                                break;
+                                case 'Charts':include_once './Charts.php'; 
                                 break;
                             }
                         }else{
