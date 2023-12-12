@@ -51,6 +51,9 @@
         line-height: 40px;
         border: 1px solid red;
     }
+    .myOrder-item{
+        margin-left: 20px;
+    }
 </style>
 
 <?php
@@ -64,8 +67,48 @@ if(isset($_SESSION['ID'])){
     ?>
 <div class="myOrder">
             <ul class="nav-myOrder">
+                <a id="pendingBtn" class=" myOrder-item " href="#">Pending</a>
                 <a id="activeOrder" class=" myOrder-item " href="#">ALL</a>
             </ul>
+             <!--Pending-->
+             <div id="pending" class="main-order-cart">
+            <ul style="width: 100%;height: auto;">
+            <?php
+                    while($rowOrder = $resultAllOrders->fetch_assoc()){
+                        $OrderID = $rowOrder['OrderID'];
+                        $sqlOrderDetails = "SELECT * FROM orderdetail Where OrderID = '$OrderID' AND StatusOrderDetail = 0"; 
+                        $rsOrderDetail = $conn->query($sqlOrderDetails); 
+                        while($rowOrderDetail = $rsOrderDetail->fetch_assoc()){
+                            $ProductID = $rowOrderDetail['ProductID']; 
+                            $sqlProductOrder = "SELECT * FROM product Where ProductID = '$ProductID'"; 
+                            $rsProductOrder = $conn->query($sqlProductOrder); 
+                            while($rowProductOrder = $rsProductOrder->fetch_assoc()){
+                                $PriceAProduct = $rowOrderDetail['OrderTotal'] / $rowOrderDetail['Quantity']; 
+                                ?>
+                                 <li style="display: flex;justify-content: space-around;border-bottom: 1px solid rgba(128, 128, 128, 0.185);">
+                        <div style="display: flex;">
+                            <img width="120" height="120" src="../Assets/Image/<?php echo $rowProductOrder['ProductImage'] ?>" alt="">
+                            <div style="margin-left: 20px;margin-top:20px">
+                                <span style="font-size:20px;font-weight: bold;"><?php echo $rowProductOrder['ProductName'] ?></span><br>
+                                <span style="font-size: 20px;font-weight: bold;position:relative;top:5px">x <?php echo $rowOrderDetail['Quantity'] ?></span>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;justify-content: space-around;">
+                            <span style="font-size:20px;font-weight: bold;">$<?php echo $PriceAProduct ?>.00</span>
+                            <span style="font-size:23px;font-weight: bold;color:red;">Total :$<?php echo $rowOrderDetail['OrderTotal'] ?>.00</span>
+                            <span id="Cancel" style="width: 120px;height:40px;background-color:orange;text-align: center;line-height: 40px;" ><a style="font-size:20px;font-weight: bold;color: white" 
+                            href="/Nhom09_WebBanHang_LoaPoly/WebPage/PendingDelete.php?id=<?php echo $rowOrderDetail['OrderDetailID'] ?>">Cancel</a></span>
+                        </div>
+                    </li>
+                                <?php
+                            }
+                        } 
+                    }            
+                ?>
+                <div class="s-order-hr">
+                    
+                    </div>
+            </div>
             <!--ALL-->
             <div id="all" class="main-order-cart">
                 <ul style="width: 100%;height:auto;">
@@ -105,44 +148,7 @@ if(isset($_SESSION['ID'])){
 
                 </div>
             </div>
-             <!--Pending-->
-            <div id="pending" class="main-order-cart">
-            <ul style="width: 100%;height: auto;">
-            <?php
-                    while($rowOrder = $resultAllOrders->fetch_assoc()){
-                        $OrderID = $rowOrder['OrderID'];
-                        $sqlOrderDetails = "SELECT * FROM orderdetail Where OrderID = '$OrderID' AND StatusOrderDetail = 0"; 
-                        $rsOrderDetail = $conn->query($sqlOrderDetails); 
-                        while($rowOrderDetail = $rsOrderDetail->fetch_assoc()){
-                            $ProductID = $rowOrderDetail['ProductID']; 
-                            $sqlProductOrder = "SELECT * FROM product Where ProductID = '$ProductID'"; 
-                            $rsProductOrder = $conn->query($sqlProductOrder); 
-                            while($rowProductOrder = $rsProductOrder->fetch_assoc()){
-                                $PriceAProduct = $rowOrderDetail['OrderTotal'] / $rowOrderDetail['Quantity']; 
-                                ?>
-                                 <li style="display: flex;justify-content: space-around;border-bottom: 1px solid rgba(128, 128, 128, 0.185);">
-                        <div style="display: flex;">
-                            <img width="120" height="120" src="../Assets/Image/<?php echo $rowProductOrder['ProductImage'] ?>" alt="">
-                            <div style="margin-left: 20px;margin-top:20px">
-                                <span style="font-size:20px;font-weight: bold;"><?php echo $rowProductOrder['ProductName'] ?></span><br>
-                                <span style="font-size: 20px;font-weight: bold;position:relative;top:5px">x <?php echo $rowOrderDetail['Quantity'] ?></span>
-                            </div>
-                        </div>
-                        <div style="display: flex; flex-direction: column;justify-content: space-around;">
-                            <span style="font-size:20px;font-weight: bold;">$<?php echo $PriceAProduct ?>.00</span>
-                            <span style="font-size:23px;font-weight: bold;color:red;">Total :$<?php echo $rowOrderDetail['OrderTotal'] ?>.00</span>
-                            <span id="Cancel" style="width: 120px;height:40px;background-color:orange;text-align: center;line-height: 40px;" ><a style="font-size:20px;font-weight: bold;color: white" href="">Cancel</a></span>
-                        </div>
-                    </li>
-                                <?php
-                            }
-                        } 
-                    }            
-                ?>
-                <div class="s-order-hr">
-                    
-                    </div>
-            </div>
+            
              <!--delivery-->
             <div id="delivery" class="main-order-cart">
                 <ul style="width: 100%;height: auto;">
@@ -206,25 +212,26 @@ if(isset($_SESSION['ID'])){
     let all = document.getElementById('all');
     let pending = document.getElementById('pending');
     let delivery = document.getElementById('delivery');
+    
     let allBtn = document.getElementById('activeOrder'); 
-
     let pendingBtn = document.getElementById('pendingBtn'); 
-
     let deliveryBtn = document.getElementById('deliveryBtn'); 
 
-    pending.style.display='none';
+    all.style.display='none';
     delivery.style.display='none';
+    pendingBtn.addEventListener('click',function(){
+        pending.style.display='block'; 
+        all.style.display='none';
+        delivery.style.display='none';
+    })
+    
     allBtn.addEventListener('click',function(){
         all.style.display='block'; 
         pending.style.display='none';
         delivery.style.display='none';
     })
 
-    pendingBtn.addEventListener('click',function(){
-        pending.style.display='block'; 
-        all.style.display='none';
-        delivery.style.display='none';
-    })
+
     deliveryBtn.addEventListener('click',function(){
         delivery.style.display='block'; 
         pending.style.display='none';

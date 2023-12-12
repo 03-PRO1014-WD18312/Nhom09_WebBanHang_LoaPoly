@@ -7,7 +7,7 @@ $con  = mysqli_connect("localhost","root","","my_shop");
          $sql ="SELECT * FROM orders inner join OrderDetail on Orders.OrderID = OrderDetail.OrderID inner join product on OrderDetail.ProductID = product.ProductID where StatusOrderDetail = 1  "; 
          $result = mysqli_query($con,$sql);
          $chart_data="";
-         while ($row = mysqli_fetch_array($result)) { 
+         while ($row = mysqli_fetch_array($result)) {
             $productname[]  = $row['ProductName']  ;
             $sales[] = $row['OrderTotal'];
         }
@@ -39,6 +39,12 @@ $con  = mysqli_connect("localhost","root","","my_shop");
                         datasets: [{
                             backgroundColor: [
                                "#5969ff",
+                                "#ff407b",
+                                "#25d5f2",
+                                "#ffc750",
+                                "#2ec551",
+                                "#7040fa",
+                                "#5969ff",
                                 "#ff407b",
                                 "#25d5f2",
                                 "#ffc750",

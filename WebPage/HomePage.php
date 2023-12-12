@@ -129,7 +129,7 @@ $conn->close();
         </div>
         <div class="body__slice-wrap">
 
-<!-- search san pham -->
+
         <div class="body__slice">               
                 <div style="width:100%" class="body__slice-search">
                 <form action="/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_HomePage=Search" method="post">
@@ -140,7 +140,7 @@ $conn->close();
                     </form>                
                 </div>
             </div>
-<!-- het search san pham -->
+
 
             <div class="body__slice-main">
                 <div class="slice__wrap">

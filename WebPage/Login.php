@@ -66,19 +66,54 @@
             })
     }return false;
     }
+
+
+    function vaLogin(){
+
+        var eLogin =document.getElementById('eLogin').value;
+        var error_eLogin=document.getElementById('error_eLogin');
+        var regexeLogin = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if(eLogin == '' || eLogin == null){
+            error_eLogin.innerHTML = " Email không được để trống";
+        }else if(!regexeLogin.test(eLogin)){
+            error_eLogin.innerHTML = " Email nhập vào không hợp lệ";  
+            eLogin ='';
+        }else{error_eLogin.innerHTML = "";};
+
+        var pLogin =document.getElementById('pLogin').value;
+        var error_pLogin =document.getElementById('error_pLogin');
+        var regexpLogin = /(?=^.{8,}$)/;
+
+        if(pLogin == '' || pLogin == null){
+            error_pLogin.innerHTML = " Password không được để trống";
+        }else if(!regexpLogin.test(pLogin)){
+            error_pLogin.innerHTML = "Password Tối thiểu tám ký tự";  
+            pLogin = '';
+        }else{error_pLogin.innerHTML = "";};
+        
+        if(eLogin && pLogin){
+            return true;
+        }else{            
+            document.getElementById('form').addEventListener("form",function(e){
+                e.preventDefault();
+            })
+    }return false;
+
+    }
 </script>
 <div class="main__login">
     <div id="wrap__login">
-        <form id="form" action="ProcessLogin.php" method="POST">
+        <form id="form" action="ProcessLogin.php" method="POST" onsubmit="return vaLogin();">
             <h2 class="login__tt">Login</h2>
             <div id="data__login">
                 <div>
-                    <Label>Email address</Label>
-                    <input type="email" placeholder="Your email" name="Email" required>
+                    <Label>Email address<span style="color: red;" id="error_eLogin"></Label>
+                    <input id="eLogin" type="email" placeholder="Your email" name="Email" >
                 </div>
                 <div>
-                    <label>Password</label>
-                    <input type="password" placeholder="Your password" name="Password" required>
+                    <label>Password<span style="color: red;" id="error_pLogin"></label>
+                    <input id="pLogin" type="password" placeholder="Your password" name="Password" >
                 </div>
             </div>
             <div id="optionsLogin">

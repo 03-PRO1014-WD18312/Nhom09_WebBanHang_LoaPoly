@@ -15,12 +15,12 @@ if(!isset($_SESSION['Email'])){
 
     include '../Assets/ConnectDB.php'; 
     $id = $_GET['id'];
-    $sql = "DELETE  FROM category Where CategoryID = '$id'"; 
+    $sql = "DELETE  FROM orderdetail Where OrderDetailID = '$id'"; 
     $conn->query($sql);    
     $conn->close();
     ?>
       <script>
-          window.location = "/Nhom09_WebBanHang_LoaPoly/myAdmin/_LayoutAdmin.php?myLayout=listCate"   
+          window.location = "http://localhost/Nhom09_WebBanHang_LoaPoly/WebPage/_LayoutWebPage.php?_LayoutWeb=Order#"   
       </script>
     <?php
 ?>

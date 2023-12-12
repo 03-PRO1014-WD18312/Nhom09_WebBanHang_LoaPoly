@@ -8,7 +8,7 @@ if(!isset($_SESSION['Email'])){
 }
 include '../Assets/ConnectDB.php'; 
 
-$sql = "SELECT * FROM orders inner join OrderDetail on Orders.OrderID = OrderDetail.OrderID where StatusOrderDetail = 1  "; 
+$sql = "SELECT * FROM orders inner join OrderDetail on Orders.OrderID = OrderDetail.OrderID inner join user on user.UserID = orders.UserID inner join product on `product`.`ProductID` = `orderdetail`.`ProductID` where StatusOrderDetail = 1  "; 
 $result = $conn->query($sql);
 $conn->close();
 ?>
@@ -30,13 +30,13 @@ $conn->close();
     }
 </style>
 <table #id="main-order">
-    <tr>
-        <th>User ID</th>
-        <th>Product ID</th>
-        <th>Quantity</th>
-        <th>Total</th>
-        <th>Date</th>
-        <th>Status<th>
+<tr>
+            <th>User Name</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Date</th>
+            <th>Status</th>
     </tr>
     <?php 
      if ($result->num_rows > 0) 
@@ -44,10 +44,10 @@ $conn->close();
       while($row = $result->fetch_assoc()) {
     ?>
         <tr>
-            <td><?php echo $row['UserID'] ?></td>
-            <td><?php echo $row['ProductID'] ?></td>
+            <td><?php echo $row['UserName'] ?></td>
+            <td><?php echo $row['ProductName'] ?></td>
             <td><?php echo $row['Quantity'] ?></td>
-            <td>$<?php echo $row['OrderTotal'] ?></td>
+            <td><?php echo $row['OrderTotal'] ?>$</td>
             <td><?php echo $row['OrderDate'] ?></td>
             <td><?php if($row['StatusOrderDetail'] == 1){
                 echo "Paid";
